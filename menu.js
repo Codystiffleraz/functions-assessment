@@ -30,7 +30,14 @@
     'kids'
 */
 
-//CODE HERE
+let pizza = {
+    name: 'Pineapple',
+    price: 20,
+    category: 'Entree',
+    popularity: 100,
+    rating: 10,
+    tags: ['Epic', 'Sauced up', 'vegan']
+}
 
 
 
@@ -42,7 +49,7 @@
     Use dot notation to access the value.
 */
 
-//CODE HERE
+// console.log(pizza.popularity)
 
 
 /*
@@ -52,8 +59,7 @@
     get the value.
 */
 
-//CODE HERE
-
+// console.log(pizza.tags[1])
 
 /*
     Third, destructure the price off of the
@@ -62,9 +68,9 @@
     Print the value of your new price variable.
 */
 
-//CODE HERE
+let price = pizza.price
 
-
+// console.log(price)
 /*
     Fourth, and last, destructure the category
     property.
@@ -72,7 +78,8 @@
     Print the value of your category variable. 
 */
 
-//CODE HERE
+let category = pizza.category
+// console.log(category)
 
 
 //////////////////PROBLEM 3////////////////////
@@ -87,7 +94,49 @@
     data in some functions that you'll write.
 */
 
-//CODE HERE
+let foodArr = [
+      {
+        name: 'Pepperoni',
+        price: 12,
+        category: 'Appetizer',
+        popularity: 200,
+        rating: 8,
+        tags: ['Meat', 'super Sauced up', 'notvegan']
+    },
+     {
+        name: 'cheese',
+        price: 10,
+        category: 'Entree',
+        popularity: 80,
+        rating: 9,
+        tags: ['kids', 'cheesed up', 'vegaterian']
+    },
+      {
+        name: 'Meat Lovers',
+        price: 25,
+        category: 'Entree',
+        popularity: 150,
+        rating: 10,
+        tags: ['Grown Men', 'Meat', 'Awesomeness']
+    },
+      {
+        name: 'Ricotta Cheese',
+        price: 15,
+        category: 'appetizer',
+        popularity: 75,
+        rating: 7,
+        tags: ['Cheese', 'vegaterian', 'Crustlisious']
+    },
+      {
+        name: 'Just the bread',
+        price: 8,
+        category: 'app',
+        popularity: 20,
+        rating: 5,
+        tags: ['literally jsut bread', 'breaded up', 'vegan']
+    }
+                    
+]
 
 
 
@@ -103,11 +152,14 @@
     your food objects has.
 */
 
-//CODE HERE
-
-// const filteredFood = foodArr.filter(/* CALLBACK HERE */)
 
 
+ const filteredFood = foodArr.filter(element => foodArr.tags = element)
+//  console.log(filteredFood)
+
+const tagCallback = (callback) => callback()
+
+tagCallback(filteredFood('vegan'))
 
 //////////////////PROBLEM 5////////////////////
 /* 

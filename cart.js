@@ -33,9 +33,11 @@ const cart = [
     }
 ]
 
-//CODE HERE
 
-// const summedPrice = cart.reduce(/* CALLBACK HERE */)
+
+ const summedPrice = cart.reduce((acc, cur) => acc + cur)
+ 
+//  console.log(summedPrice)
 
 
 //////////////////PROBLEM 2////////////////////
@@ -53,9 +55,12 @@ const cart = [
     decimals, for example: .06 for a 6% tax.
 */
 
-//CODE HERE
+const calcFinalPrice = (cartTotal, couponValue, tax) => {
+    return cartTotal = (cartTotal * tax) - couponValue
 
+}
 
+// console.log(calcFinalPrice(100, 50, 1.06))
 
 //////////////////PROBLEM 3////////////////////
 /*  
@@ -77,14 +82,22 @@ const cart = [
     Your object should have at least 4 properties. 
 */
 
-/*
-    TEXT ANSWER HERE
-
-*/
+// let car = {
+//     color: 'string',
+//     working: Boolean,
+//     miles: Number,
+//     brand: 'string'
+// }
 
 /*
     Now, create a customer object following your own
     guidelines.
 */
 
-//CODE HERE
+let car2 = {
+    color: 'Red',
+    working: true,
+    miles: 20000,
+    brand: 'Mercedes'
+}
+

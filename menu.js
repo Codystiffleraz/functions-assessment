@@ -133,7 +133,7 @@ let foodArr = [
         category: 'app',
         popularity: 20,
         rating: 5,
-        tags: ['literally jsut bread', 'breaded up', 'vegan']
+        tags: ['literally just bread', 'breaded up', 'vegan']
     }
                     
 ]
@@ -154,12 +154,21 @@ let foodArr = [
 
 
 
- const filteredFood = foodArr.filter(element => foodArr.tags = element)
-//  console.log(filteredFood)
+//  const filteredFood = foodArr.filter(element => foodArr.tags = element)
+// //  console.log(filteredFood)
 
-const tagCallback = (callback) => callback()
+// const tagCallback = (callback) => callback()
 
-tagCallback(filteredFood('vegan'))
+// tagCallback(filteredFood('Meat'))
+
+// or
+
+// const filteredFood = foodArr.filter((food) => {
+//     if(food.tags.includes('Meat')){
+//         return food
+//     }
+//  }
+// )
 
 //////////////////PROBLEM 5////////////////////
 /* 
@@ -200,8 +209,20 @@ tagCallback(filteredFood('vegan'))
     Return the filtered array from the entire function
 */
 
-//CODE HERE
+const filterByProperty = (property, number, type) => {
+    const filteredFood = foodArr.filter((food) => {
+        if(type === 'above'){
+            return food[property] >= number
+        }else {
+            return food[property] <= number
+        }
+    })
 
+
+return filteredFood
+}
+
+console.log(filterByProperty('popularity', 9, 'above'))
 
 /*
     Invoke the `filterByProperty` function passing

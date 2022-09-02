@@ -35,7 +35,7 @@ const cart = [
 
 
 
- const summedPrice = cart.reduce((acc, cur) => acc + cur)
+ const summedPrice = cart.reduce((acc, cur) => acc + cur.price, 0)
  
 //  console.log(summedPrice)
 
@@ -101,3 +101,4 @@ let car2 = {
     brand: 'Mercedes'
 }
 
+// console.log(car2)
